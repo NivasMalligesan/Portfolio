@@ -12,7 +12,7 @@ import {
   
   const Sidebar = () => {
     return (
-      <div className="w-[280px]   h-full border-r border-r-gray-100 border-opacity-20 hidden lg:block">
+      <div className="w-[280px] fixed  h-full border-r border-r-gray-100 border-opacity-20 hidden lg:block">
         <div className="flex justify-center mt-10">
           <img
             src={profile}
@@ -26,7 +26,7 @@ import {
           </div>
         </div>
         <ul className="p-6">
-          <li className="py-2 mt-3  cursor-pointer pr-3 hover:bg-zinc text-gray duration-300 hover:text-green-500 flex justify-start items-center pointer w-[200px] mx-auto rounded">
+          <li className="py-2 mt-3  cursor-pointer pr-3   hover:bg-zinc text-gray duration-300 hover:text-green-500 flex justify-start items-center pointer w-[200px] mx-auto rounded">
             <HomeIcon className="mr-4 ml-5" />
             Home
           </li>

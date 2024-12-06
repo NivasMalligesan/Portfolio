@@ -3,7 +3,7 @@ import { Github, InstagramIcon, Linkedin, Mail } from 'lucide-react'; // Adjust 
 
 export default function SocialIcons() {
   return (
-    <div className="px-5 sm:px-10">
+    <div className="lg:mt-[80px]">
       <div className="flex items-center gap-5 justify-start mt-10 lg:mt-0">
         {/* LinkedIn Icon */}
         <div className="relative group">

@@ -4,6 +4,7 @@ import { ArrowRight, Github, InstagramIcon, Linkedin, Mail, MapPin } from 'lucid
 import Cards from './Cards';
 import Socialicons from './Socialicon';
 
+
 const Hero = () => {
   useEffect(() => {
     gsap.fromTo(
@@ -21,7 +22,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id="Hero" className="pl-5 mt-10">
+    <div id="Hero" className="sm:px-5 pl-2 mt-6">
       <div className="flex flex-col sm:flex-row">
         {/* Text Section */}
         <div className="flex-3 p-5 pb-0 mr-8">
@@ -33,22 +34,25 @@ const Hero = () => {
             <p className="text-sm sm:text-base text-gray">
               "Turning raw data into actionable insights—where curiosity meets clarity. I love transforming complex data into clear, impactful insights and solutions with advanced analytics and machine learning."
             </p>
+            <Socialicons/>
+            <div className="flex justify-start items-center mt-5 ">
+              <MapPin size={15} />
+              <h1 className="ml-2 text-sm text-gray hover:text-green-500 cursor-pointer duration-300">Hosur, India</h1>
+            </div>
           </div>
         </div>
         {/* Cards Section */}
         <div className="mr-6 ml-8 sm:w-1/3 hidden lg:block">
           <Cards />
         </div>
-      </div>
 
-      <Socialicons/>
+      </div>
+     
+
+     
 
       {/* Footer Section */}
       <div className="lg:flex justify-between items-center mt-10 lg:mt-3 ">
-        <div className="flex justify-start items-center sm:ml-5 p-5 ">
-          <MapPin size={15} />
-          <h1 className="ml-2 text-sm text-gray hover:text-green-500 cursor-pointer duration-300">Hosur, India</h1>
-        </div>
         <div className="px-5 flex lg:hidden">
           <button className="py-2 mt-3 w-full rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center mx-auto transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
             More About Me
