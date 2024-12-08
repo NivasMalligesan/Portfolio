@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <div id="Hero" className="sm:px-5 pl-2 mt-6">
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex  flex-col sm:flex-row">
         {/* Text Section */}
         <div className="flex-3 p-5 pb-0 mr-8">
           <div className="sm:mt-3 flex-row lg:flex items-center sm:ml-5">
@@ -35,19 +35,33 @@ const Hero = () => {
               "Turning raw data into actionable insights—where curiosity meets clarity. I love transforming complex data into clear, impactful insights and solutions with advanced analytics and machine learning."
             </p>
             <Socialicons/>
-            <div className="flex justify-start items-center mt-5 ">
-              <MapPin size={15} />
-              <h1 className="ml-2 text-sm text-gray hover:text-green-500 cursor-pointer duration-300">Hosur, India</h1>
-            </div>
           </div>
         </div>
         {/* Cards Section */}
-        <div className="mr-6 ml-8 sm:w-1/3 hidden lg:block">
+        <div className="mr-6 lg:ml-8 sm:w-1/3 hidden md:block">
           <Cards />
         </div>
+      
+      </div>
+
+      <div className="px-5 hidden lg:flex justify-center lg:justify-start mt-8 gap-6 lg:mt-0">
+        <button className="py-2 my-3 mb-10 w-full lg:w-full rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
+          More About Me
+          <ArrowRight
+            size={15}
+            className="ml-2 transition-transform duration-300 group-hover:translate-x-3"
+          />
+        </button>
+        <button className="py-2 my-3 mb-10 w-full lg:w-full rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
+          More About Me
+          <ArrowRight
+            size={15}
+            className="ml-2 transition-transform duration-300 group-hover:translate-x-3 group-hover:text-green-500 text-gray-400"
+          />
+        </button>
+
 
       </div>
-     
 
      
 

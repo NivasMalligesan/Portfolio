@@ -21,7 +21,7 @@ const Projects = () => {
 
   return (
     <div className="sm:px-9">
-      <h1 className="py-10 text-2xl font-medium ml-5">Projects</h1>
+      <h1 className="py-10 text-2xl font-medium ml-5 text-white">Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {projects.map((project, index) => (
           <a

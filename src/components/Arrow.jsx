@@ -27,6 +27,11 @@ const HorizontalLoop = () => {
           </div>
         ))}
       </div>
+
+      {/* Apply the inner shadow to both left and right sides */}
+      <div className="absolute top-0 left-0 w-4 h-full bg-gradient-to-r from-black to-transparent"></div>
+      <div className="absolute top-0 right-0 w-4 h-full bg-gradient-to-l from-black to-transparent"></div>
+
       <style>{`
         @keyframes scroll {
           from {

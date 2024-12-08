@@ -17,7 +17,7 @@ export default {
           300: "#42424570",
         },
         sandle: "#EFE8DC",
-        zinc: "#101010",
+        zinc: "#1A1A1A",
         light_green:"#04301c"
       },
       fontFamily: {

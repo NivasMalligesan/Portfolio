@@ -10,7 +10,6 @@ export default function SocialIcons() {
           <Linkedin
             className="text-gray-500 hover:text-green-500 transition duration-300 transform hover:scale-110"
             size={20}
-            color='white'
           />
           <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 text-xs text-green-500 bg-light_green rounded-md p-2 opacity-0 group-hover:opacity-100 transition-all duration-200">
             LinkedIn
