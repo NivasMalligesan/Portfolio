@@ -1,11 +1,8 @@
 import '../App.css';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
 import SideCommon from '../components/SideCommon';
 import Testimonial from '../components/Testimonial';
-import Connect from '../components/Connect';
+import Connect_hero from '../components/Connect_hero';
 
 function Home() {
   return (
@@ -15,11 +12,8 @@ function Home() {
         {/* Sidebar is fixed on large devices */}
         <SideCommon/>
         <div className="w-full lg:ml-[280px] overflow-hidden"> {/* Add left margin to avoid overlap */}
-          <Hero />
-          <Projects />
-          <Skills />
+        <Connect_hero/>
           <Testimonial/>
-          <Connect/>
         </div>
       </div>
     </>

@@ -1,45 +1,51 @@
 import React,{useEffect} from 'react';
 import Profile from '../../public/assets/profile.jpg';
-import { ArrowRight, Import } from 'lucide-react';
 import Arrow from './Arrow';
 import gsap from 'gsap';
 import Apple from '../../public/assets/Apple.png'
 import QR from '../../public/assets/QR.png'
+const Project_hero = () => {
 
-const Projects = () => {
-  useEffect(() => {
-    gsap.fromTo(
-      '#project',
-      {
-        y: 180,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        ease: 'power4.out',
-      }
-    );
-  }, []);
-  const projects = [
-    {
-      image: Apple,
-      name: 'Apple Clone Website',
-      title: 'WEB PROJECT',
-      link: 'https://keen-liger-097e40.netlify.app',
-    },
-    {
-      image: QR,
-      name: 'QR Code Generator',
-      title: 'WEB PROJECT',
-      link: 'https://pro-qr-generator.netlify.app',
-    },
-  ];
+    useEffect(() => {
+        gsap.fromTo(
+          '#project',
+          {
+            y: 180,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            ease: 'power4.out',
+          }
+        );
+      }, []);
+      const projects = [
+        {
+          image: Apple,
+          name: 'Apple Clone Website',
+          title: 'WEB PROJECT',
+          link: 'https://keen-liger-097e40.netlify.app/',
+        },
+        {
+              image: QR,
+              name: 'QR Code Generator',
+              title: 'WEB PROJECT',
+              link: 'https://pro-qr-generator.netlify.app',
+            },
+        {
+          image: Profile,
+          name: 'E-Commerce Platform',
+          title: 'WEB PROJECT',
+          link: 'https://nivasportfolio.framer.website/projects',
+        },
+      ];
+    
 
   return (
-    <div id='project' className="sm:px-9">
-      <h1 className="py-10 text-2xl font-medium ml-5 text-white">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    <div  id='project'  className='p-5 md:p-10 mt-10'>
+        <h1 className='text-white text-3xl font-medium ps-4 sm:text-5xl'>My Remarkable Project</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-20">
         {projects.map((project, index) => (
           <a
             target="_blank"
@@ -74,17 +80,9 @@ const Projects = () => {
           </a>
         ))}
       </div>
-      <div className="px-5 flex justify-center lg:justify-end mt-8">
-        <button className="py-2 my-3 mb-10 w-full lg:w-1/3 rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
-          Explore More Projects
-          <ArrowRight
-            size={15}
-            className="ml-2 transition-transform duration-300 group-hover:translate-x-3"
-          />
-        </button>
-      </div>
+   
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Project_hero

@@ -1,18 +1,18 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
 
-const HorizontalLoop = () => {
+const ConnectArrow = () => {
   // Create an array of arrow icons
-  const items = Array.from({ length: 10 }, () => <ArrowRight size={40} color="green" />);
+  const items = Array.from({ length: 10 }, () => <ArrowRight size={60} className="text-green-800" />);
 
   return (
-    <div className="hidden group-hover:flex relative w-1/3 overflow-hidden whitespace-nowrap shadow-inner">
+    <div className="relative w-full overflow-hidden whitespace-nowrap shadow-inner">
       <div className="flex animate-scroll">
         {/* Render the array of arrow icons */}
         {items.map((item, index) => (
           <div
             key={index}
-            className="inline-block px-2 py-2 mx-1 rounded-md min-w-[60px] text-center"
+            className="inline-block px-5 py-2 mx-10 sm:mx-28 rounded-md min-w-[50px] text-center ml-5"
           >
             {item}
           </div>
@@ -21,7 +21,7 @@ const HorizontalLoop = () => {
         {items.map((item, index) => (
           <div
             key={`${index}-clone`}
-            className="inline-block px-2 py-2 mx-1 rounded-md min-w-[60px] text-center"
+            className="inline-block px-5 py-2 mx-10 sm:mx-28 rounded-md min-w-[50px] text-center"
           >
             {item}
           </div>
@@ -31,7 +31,6 @@ const HorizontalLoop = () => {
       {/* Apply the inner shadow to both left and right sides */}
       <div className="absolute top-0 left-0 w-4 h-full bg-gradient-to-r from-black to-transparent"></div>
       <div className="absolute top-0 right-0 w-4 h-full bg-gradient-to-l from-black to-transparent"></div>
-
       <style>{`
         @keyframes scroll {
           from {
@@ -49,4 +48,4 @@ const HorizontalLoop = () => {
   );
 };
 
-export default HorizontalLoop;
+export default ConnectArrow;

@@ -28,7 +28,16 @@ export default {
       sm : '480px',
       md:'768px',
       lg:'1024px',
-    }
+    },keyframes: {
+      marquee: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-50%)' },
+      },
+    },
+    animation: {
+      marquee: 'marquee 15s linear infinite',
+      marqueeFast: 'marquee 10s linear infinite', 
+    },
   },
   plugins: [],
 }

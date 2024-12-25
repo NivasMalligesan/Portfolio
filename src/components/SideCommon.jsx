@@ -1,21 +1,21 @@
 import React from "react";
-import { FaChalkboardTeacher,FaProjectDiagram, FaDashcube, FaHome, FaServicestack, FaStackOverflow, FaStackpath, FaUser, FaUserAstronaut, FaUserCircle, FaFileContract } from "react-icons/fa";
+import { FaChalkboardTeacher,FaProjectDiagram, FaDashcube, FaHome, FaServicestack, FaStackOverflow, FaStackpath, FaUser, FaUserAstronaut, FaUserCircle, FaFileContract, FaAward } from "react-icons/fa";
 import Sidebar, { SidebarItem } from "./Sidebar";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaCubesStacked } from "react-icons/fa6";
-import { IoCall } from "react-icons/io5";
+import { IoCall, IoReturnUpForward } from "react-icons/io5";
 
 const SideCommon = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   return (
-    <div className="flex flex-1">
+    <div className="flex flex-1 ">
       <Sidebar>
         <SidebarItem
           icon={<FaHome  size={17} />}
           onClick={() => navigate('/home')}
-          active={location.pathname === '/home'}
+          active={location.pathname === '/home' || location.pathname === '/'}
           text="Home"
         />
         <SidebarItem
@@ -35,6 +35,12 @@ const SideCommon = () => {
           onClick={() => navigate('/tech_stack')}
           active={location.pathname === '/tech_stack'}
           text="Tech Stack"
+        />
+        <SidebarItem
+          icon={<FaAward   size={17} />}
+          onClick={() => navigate('/certificates')}
+          active={location.pathname === '/certificates'}
+          text="Certificates"
         />
         <SidebarItem
           icon={<IoCall  size={17} />}

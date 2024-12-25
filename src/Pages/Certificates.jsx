@@ -1,13 +1,10 @@
 import '../App.css';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
 import SideCommon from '../components/SideCommon';
-import Testimonial from '../components/Testimonial';
 import Connect from '../components/Connect';
+import Certificate_hero from '../components/Certificate_hero';
 
-function Home() {
+function Certificates() {
   return (
     <>
       <Navbar />
@@ -15,10 +12,7 @@ function Home() {
         {/* Sidebar is fixed on large devices */}
         <SideCommon/>
         <div className="w-full lg:ml-[280px] overflow-hidden"> {/* Add left margin to avoid overlap */}
-          <Hero />
-          <Projects />
-          <Skills />
-          <Testimonial/>
+          <Certificate_hero/>
           <Connect/>
         </div>
       </div>
@@ -26,4 +20,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Certificates;

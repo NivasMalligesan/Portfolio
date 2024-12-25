@@ -16,7 +16,7 @@ const Sidebar = ({ children }) => {
           Available For Work
         </div>
       </div>
-      <ul className="p-6">{children}</ul>
+      <ul className="px-6">{children}</ul>
     </div>
   );
 };

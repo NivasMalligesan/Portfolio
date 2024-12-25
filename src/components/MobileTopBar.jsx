@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaHome, FaUserCircle, FaCube, FaProjectDiagram } from 'react-icons/fa';
-import { IoCall } from 'react-icons/io5';
+import { FaHome, FaUserCircle, FaCube, FaProjectDiagram, FaAward } from 'react-icons/fa';
+import { IoCall, IoReturnDownBack } from 'react-icons/io5';
 import MobileOptions, { MobileOptionItem } from './MobileOptions';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const MobileTopBar = ({ isMenuOpen }) => {
 
   return (
     <div
-      className={`w-full rounded-b-2xl lg:hidden  transform ${
+      className={`w-full rounded-b-2xl lg:hidden z-10 fixed  transform ${
         isMenuOpen ? 'translate-y-0' : '-translate-y-full'
       } duration-[300ms] ease-in-out bg-black`}
     >
@@ -40,6 +40,12 @@ const MobileTopBar = ({ isMenuOpen }) => {
             active={location.pathname === '/tech_stack'}
             text="Tech Stack"
           />
+          <MobileOptionItem
+                    icon={<FaAward   size={17} />}
+                    onClick={() => navigate('/certificates')}
+                    active={location.pathname === '/certificates'}
+                    text="Certificates"
+            />
           <MobileOptionItem
             icon={<IoCall size={17} />}
             onClick={() => navigate('/contact')}
