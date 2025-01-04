@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
 
       <div className="px-5 hidden lg:flex justify-center lg:justify-start mt-8 gap-6 lg:mt-0">
-        <button onClick={() => navigate('/Projects')} className="py-2 my-3 mb-10 w-full lg:w-full rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
+        <button onClick={() => navigate('/project')} className="py-2 my-3 mb-10 w-full lg:w-full rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
           Explore my Projects
           <ArrowRight
             size={15}

@@ -42,7 +42,7 @@ const Stack = () => {
             </div>
             <div className='flex justify-center lg:justify-end mx-5'>
 
-            <button onClick={()=> navigate('/stack')} className='py-2 my-3 mb-10 w-full lg:w-1/4 rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none lg:mr-10'>
+            <button onClick={()=> navigate('/tech_stack')} className='py-2 my-3 mb-10 w-full lg:w-1/4 rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none lg:mr-10'>
                 View All Stacks
             </button>
             </div>
