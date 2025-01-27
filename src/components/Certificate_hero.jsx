@@ -11,7 +11,6 @@ const Certificate_hero = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Initial animation for the course section
     gsap.fromTo('#course', {
       opacity: 0,
       y: 180,
@@ -23,23 +22,7 @@ const Certificate_hero = () => {
     });
 
     // ScrollTrigger animation for the competition section
-    gsap.fromTo(
-      '#competition', 
-      {
-        opacity: 0,
-        y: 150,
-      }, 
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: '#competition',
-          start: 'top 90%',
-          toggleActions: 'play none none none',
-          ease: 'power4.out', // Animation toggles based on scroll direction
-        },
-      }
-    );
+    
 
   }, []);
 
@@ -106,7 +89,7 @@ const Certificate_hero = () => {
             ))}
           </div>
         </div>
-        <div className="mt-16" id="competition">
+        <div className="mt-16" id="course">
           <h1 className="text-white text-4xl mt-16 font-medium">Competition Certificates</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             {competitions.map((competition, index) => (

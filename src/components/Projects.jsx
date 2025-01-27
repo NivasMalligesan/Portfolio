@@ -4,8 +4,7 @@ import { ArrowRight, Import } from 'lucide-react';
 import Arrow from './Arrow';
 import gsap from 'gsap';
 import Apple from '../../public/assets/Apple.png'
-import QR from '../../public/assets/QR.png'
-
+import sps from '../../public/assets/sps.png';
 const Projects = () => {
   useEffect(() => {
     gsap.fromTo(
@@ -29,10 +28,10 @@ const Projects = () => {
       link: 'https://keen-liger-097e40.netlify.app',
     },
     {
-      image: QR,
-      name: 'QR Code Generator',
+      image: sps,
+      name: 'Stone Paper Scissor Game',
       title: 'WEB PROJECT',
-      link: 'https://pro-qr-generator.netlify.app',
+      link: 'https://its-rock-paper-scissor-game.netlify.app',
     },
   ];
 

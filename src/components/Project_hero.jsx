@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import Profile from '../../public/assets/profile.jpg';
+import sps from '../../public/assets/sps.png';
 import Arrow from './Arrow';
 import gsap from 'gsap';
 import Apple from '../../public/assets/Apple.png'
@@ -28,17 +28,18 @@ const Project_hero = () => {
           link: 'https://keen-liger-097e40.netlify.app/',
         },
         {
+          image: sps,
+          name: 'Stone Paper Scissor Game',
+          title: 'WEB PROJECT',
+          link: 'https://its-rock-paper-scissor-game.netlify.app',
+        },
+        {
               image: QR,
               name: 'QR Code Generator',
               title: 'WEB PROJECT',
               link: 'https://pro-qr-generator.netlify.app',
             },
-        {
-          image: Profile,
-          name: 'E-Commerce Platform',
-          title: 'WEB PROJECT',
-          link: 'https://nivasportfolio.framer.website/projects',
-        },
+        
       ];
     
 

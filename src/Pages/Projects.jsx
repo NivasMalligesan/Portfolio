@@ -8,7 +8,7 @@ import Testimonial from '../components/Testimonial';
 import Project_hero from '../components/Project_hero';
 import Connect from '../components/Connect';
 
-function Home() {
+function projects() {
   return (
     <>
       <Navbar />
@@ -24,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default projects;
