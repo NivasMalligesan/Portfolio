@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Sql_cert from '../../public/assets/sql_cert.png';
 import flipkart from '../../public/assets/flipkart.png';
 import python_Cert from '../../public/assets/python_Cert.png';
+import python_Cert1 from '../../public/assets/python_Cert1.png';
 import Arrow from '../components/Arrow';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -37,7 +38,13 @@ const Certificate_hero = () => {
       image: python_Cert,
       link: "https://coursera.org/share/6c2096cf3e6596c88b7df1c58a668601",
       title: "Python - Coursera",
-      description: "Course Certificate",
+      description: "Python Course Certificate",
+    },
+    {
+      image: python_Cert1,
+      link: "https://www.hackerrank.com/certificates/2611f53136f3",
+      title: "Python - HackerRank",
+      description: "Python Course Certificate",
     },
   ];
 
