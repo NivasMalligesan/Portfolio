@@ -3,6 +3,12 @@ import Sql_cert from '../../public/assets/sql_cert.png';
 import flipkart from '../../public/assets/flipkart.png';
 import python_Cert from '../../public/assets/python_Cert.png';
 import python_Cert1 from '../../public/assets/python_Cert1.png';
+import CodeClever from '../../public/assets/CodeClever.jpg';
+import MatchingUI from '../../public/assets/MatchingUI.jpg';
+import Nexovate25 from '../../public/assets/Nexovate25.jpg';
+import Nexovate251 from '../../public/assets/Nexovate251.jpg';
+import LegacyLayout from '../../public/assets/LegacyLayout.jpg';
+import Nexovate24 from '../../public/assets/Nexovate24.png';
 import Arrow from '../components/Arrow';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -50,10 +56,48 @@ const Certificate_hero = () => {
 
   const competitions = [
     {
+      image: CodeClever,
+      link: "",
+      title: "Code Clever - Nexovate 2025",
+      description: "Winner in Coding and Debugging",
+    },
+    {
+      image: MatchingUI,
+      link: "",
+      title: "Matching UI - Nexovate 2025",
+      description: "Winner in Designing UI Using Figma ",
+    },
+    {
+      image: LegacyLayout,
+      link: "",
+      title: "Legacy Layout - Nexovate 2024",
+      description: "Winner in Designing UI Using Figma ",
+    },
+    {
       image: flipkart,
       link: "https://unstop.com/certificate-preview/686a4895-480f-42aa-8ef3-d25aeeb5f989?utm_campaign=site-emails",
       title: "Flipkart GRiD 6.0 - Competition",
       description: "Certificate of Participation",
+    },
+  ];
+  const Events = [
+    {
+      image: Nexovate25,
+      link: "",
+      title: "Code Clever - Nexovate 2025",
+      description: "Winner in Coding and Debugging",
+    },
+    {
+      image: Nexovate251,
+      link: "",
+      title: "Matching UI - Nexovate 2025",
+      description: "Winner in Designing UI Using Figma ",
+    },
+    {
+      image: Nexovate24,
+      link: "",
+      title: "Legacy Layout - Nexovate 2024",
+      description: "Winner in Designing UI Using Figma ",
     },
   ];
 
@@ -123,6 +167,42 @@ const Certificate_hero = () => {
                       {competition.title}
                     </h1>
                     <h2 className="mt-1 text-white">{competition.description}</h2>
+                  </div>
+
+                  {/* Arrow Section */}
+                  <Arrow />
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="mt-16" id="course">
+          <h1 className="text-white text-4xl mt-16 font-medium">Events </h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            {Events.map((Events, index) => (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={Events.link}
+                key={index}
+                className="mt-10"
+              >
+                {/* Image Section */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={Events.image}
+                    alt={`Certificate for ${Events.title}`}
+                    className="w-full lg:h-[400px] object-fill rounded-2xl duration-300"
+                  />
+                </div>
+
+                {/* Text Section */}
+                <div className="mt-5 ml-2 flex items-center justify-between">
+                  <div className="">
+                    <h1 className="text-sm font-medium text-green-500">
+                      {Events.title}
+                    </h1>
+                    <h2 className="mt-1 text-white">{Events.description}</h2>
                   </div>
 
                   {/* Arrow Section */}

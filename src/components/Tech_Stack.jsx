@@ -5,6 +5,8 @@ import tailwind from '../../public/assets/tailwind.png';
 import Gsap from '../../public/assets/gsap.png';
 import C from '../../public/assets/c.png';
 import figma from '../../public/assets/figma.png';
+import express from '../../public/assets/express.png';
+import MongoDB from '../../public/assets/MongoDB.png';
 import html from '../../public/assets/html.png';
 import css from '../../public/assets/css.webp';
 import { ArrowRight } from 'lucide-react';
@@ -50,14 +52,27 @@ const Skills = () => {
     {
       image: react,
       name: 'React',
-      description: 'Frontend Tool',
+      description: 'Frontend Framework',
       brief: 'Building dynamic, responsive, and user-friendly web applications with React, delivering seamless experiences through clean and efficient code.',
     },
+   
     {
       image: tailwind,
       name: 'Tailwind CSS',
       description: 'Styling Tool',
       brief: 'Crafting sleek, responsive, and modern designs effortlessly with Tailwind CSS, transforming ideas into visually stunning user interfaces',
+    },
+    {
+      image: express,
+      name: 'Express JS',
+      description: 'Backend Framework',
+      brief: 'Building fast, scalable, and efficient server-side applications with Express.js, providing a lightweight and flexible backend framework for seamless API development and robust web services.',
+    },
+    {
+      image: MongoDB,
+      name: 'MongoDB',
+      description: 'DataBase',
+      brief: 'Building scalable, flexible, and high-performance databases with MongoDB, enabling efficient data storage, retrieval, and management through a document-oriented, NoSQL approach.',
     },
     {
       image: Gsap,

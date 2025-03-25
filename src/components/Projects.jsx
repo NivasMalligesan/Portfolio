@@ -1,11 +1,17 @@
 import React,{useEffect} from 'react';
+import {useNavigate} from 'react-router-dom';
 import Profile from '../../public/assets/profile.jpg';
 import { ArrowRight, Import } from 'lucide-react';
+import Parkin from '../../public/assets/parkin.jpg'
+import ParkinAdmin from '../../public/assets/parkinAdmin.png'
 import Arrow from './Arrow';
 import gsap from 'gsap';
 import Apple from '../../public/assets/Apple.png'
 import sps from '../../public/assets/sps.png';
+import Imagify from '../../public/assets/Imagify.jpg'
 const Projects = () => {
+
+  const navigate = useNavigate();
   useEffect(() => {
     gsap.fromTo(
       '#project',
@@ -22,16 +28,28 @@ const Projects = () => {
   }, []);
   const projects = [
     {
+      image: Parkin,
+      name: 'PARKin - Parking Slot Booking ',
+      title: 'FULLSTACK PROJECT',
+      link: 'https://parkinweb.onrender.com/',
+    },
+    {
+      image: ParkinAdmin,
+      name: 'PARKin Admin - Administrator',
+      title: 'FULLSTACK PROJECT',
+      link: 'https://parkinwebadmin.onrender.com/',
+    },
+    {
+      image: Imagify,
+      name: 'Imagify - Text To Image Generator',
+      title: 'FULLSTACK PROJECT',
+      link: 'https://imagify-fnql.onrender.com/',
+    },
+    {
       image: Apple,
       name: 'Apple Clone Website',
       title: 'WEB PROJECT',
       link: 'https://keen-liger-097e40.netlify.app',
-    },
-    {
-      image: sps,
-      name: 'Stone Paper Scissor Game',
-      title: 'WEB PROJECT',
-      link: 'https://its-rock-paper-scissor-game.netlify.app',
     },
   ];
 
@@ -74,7 +92,7 @@ const Projects = () => {
         ))}
       </div>
       <div className="px-5 flex justify-center lg:justify-end mt-8">
-        <button className="py-2 my-3 mb-10 w-full lg:w-1/3 rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
+        <button onClick={() => navigate('/project')} className="py-2 my-3 mb-10 w-full lg:w-1/3 rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
           Explore More Projects
           <ArrowRight
             size={15}

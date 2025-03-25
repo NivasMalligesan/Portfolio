@@ -4,6 +4,9 @@ import Arrow from './Arrow';
 import gsap from 'gsap';
 import Apple from '../../public/assets/Apple.png'
 import QR from '../../public/assets/QR.png'
+import Imagify from '../../public/assets/Imagify.jpg'
+import Parkin from '../../public/assets/parkin.jpg'
+import ParkinAdmin from '../../public/assets/parkinAdmin.png'
 const Project_hero = () => {
 
     useEffect(() => {
@@ -21,6 +24,24 @@ const Project_hero = () => {
         );
       }, []);
       const projects = [
+        {
+          image: Parkin,
+          name: 'PARKin - Parking Slot Booking ',
+          title: 'FULLSTACK PROJECT',
+          link: 'https://parkinweb.onrender.com/',
+        },
+        {
+          image: ParkinAdmin,
+          name: 'PARKin Admin - Administrator',
+          title: 'FULLSTACK PROJECT',
+          link: 'https://parkinwebadmin.onrender.com/',
+        },
+        {
+          image: Imagify,
+          name: 'Imagify - Text To Image Generator',
+          title: 'FULLSTACK PROJECT',
+          link: 'https://imagify-fnql.onrender.com/',
+        },
         {
           image: Apple,
           name: 'Apple Clone Website',
