@@ -43,7 +43,7 @@ const Skills = () => {
     },
     {
       image: express,
-      name: 'MongoDB',
+      name: 'Express',
       description: 'backend Framework',
     },
     {
