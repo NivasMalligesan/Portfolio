@@ -5,6 +5,8 @@ import tailwind from '../../public/assets/tailwind.png';
 import { ArrowRight } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import express from '../../public/assets/express.png';
+import MongoDB from '../../public/assets/MongoDB.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,18 +39,19 @@ const Skills = () => {
     {
       image: react,
       name: 'React',
-      description: 'Frontend Tool',
+      description: 'Frontend Framework',
     },
     {
-      image: tailwind,
-      name: 'Tailwind CSS',
-      description: 'Styling Tool',
+      image: express,
+      name: 'MongoDB',
+      description: 'backend Framework',
     },
     {
-      image: python,
-      name: 'Python',
-      description: 'Programming Language',
+      image: MongoDB,
+      name: 'MongoDB',
+      description: 'Database Management',
     },
+    
   ];
 
   return (
