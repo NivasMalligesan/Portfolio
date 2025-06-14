@@ -35,8 +35,8 @@ const Hero = () => {
           </div>
           <div className="mt-8 sm:ml-5 pr-8 sm:pr-0">
             <p className="text-sm sm:text-base text-gray">
-              "Turning raw data into actionable insights—where curiosity meets clarity. I love transforming complex data into clear, impactful insights and solutions with advanced analytics and machine learning."
-            </p>
+              I’m a passionate developer who loves transforming complex problems into clean, actionable insights and fullstack applications with modern web technologies.
+             </p>
             <Socialicons/>
           </div>
         </div>

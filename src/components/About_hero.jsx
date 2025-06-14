@@ -48,8 +48,8 @@ const About = () => {
       <div className='p-5 sm:p-10 lg:w-2/3'>
         <h1 className='text-white text-4xl sm:text-5xl font-medium'>Get to know me </h1>
         <p className='text-gray text-base mt-10'>
-          Hello, I'm Nivas, and I'm more than just a Data Scientist. I'm a Designer. I have always been captivated by the art of web design, and my journey in this field has been nothing short of exhilarating. Turning Raw Data into Strategic Insights: My Portfolio of Data Science Projects
-        </p>
+         I’m a passionate and curious fullstack developer who enjoys building smart, user-friendly web applications from the ground up. With a strong foundation in Python, SQL, and modern frameworks like React and Express.js, I love turning complex ideas into clean, functional, and scalable solutions. Whether it’s creating seamless user experiences or solving real-world challenges through code, I bring creativity, precision, and dedication to every project I work on.
+       </p>
         <h1 className='text-white hover:text-green-500 duration-300 flex items-center gap-2 mt-10'>
         <FaLocationDot/>
         Hosur , Tamil Nadu, India

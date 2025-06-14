@@ -7,10 +7,12 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import express from '../../public/assets/express.png';
 import MongoDB from '../../public/assets/MongoDB.png';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
+  const navigate = useNavigate();
   useEffect(() => {
 
     gsap.fromTo(
@@ -43,7 +45,7 @@ const Skills = () => {
     },
     {
       image: express,
-      name: 'Express',
+      name: 'Express Js',
       description: 'backend Framework',
     },
     {
@@ -72,9 +74,12 @@ const Skills = () => {
         ))}
       </div>
       <div className="px-5 flex justify-center lg:justify-end mt-8">
-        <button className="py-2 my-3 mb-10 w-full lg:w-1/3 rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
+        <button 
+           onClick={() => navigate('/tech_stack')}
+        className="py-2 my-3 mb-10 w-full lg:w-1/3 rounded-xl pr-3 md:px-8 text-gray hover:text-green-500 hover:bg-zinc flex justify-center items-center transition duration-300 group border border-opacity-50 border-gray-400 hover:border-none">
           Explore More Skills
           <ArrowRight
+         
             size={15}
             className="ml-2 transition-transform duration-300 group-hover:translate-x-3"
           />
