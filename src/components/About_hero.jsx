@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Education from './Education';
 import Stack from './Stack';
 import { FaLocationDot, FaLocationPin } from 'react-icons/fa6';
+import Experience from './Experience';
 
 
 const About = () => {
@@ -55,6 +56,8 @@ const About = () => {
         Hosur , Tamil Nadu, India
         </h1>
       </div>
+      {/* Experience */}
+      <Experience/>
       {/* Education */}
       <Education/>
       {/* stack */}

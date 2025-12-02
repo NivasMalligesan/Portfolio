@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import Sql_cert from '../../public/assets/sql_cert.png';
+import IBMcert1 from '../../public/assets/IBMcert1.jpeg';
+import IBMcert2 from '../../public/assets/IBMcert2.jpeg';
+import IBMcert3 from '../../public/assets/IBMcert3.jpeg';
+import IBMcert4 from '../../public/assets/IBMcert4.jpeg';
 import flipkart from '../../public/assets/flipkart.png';
 import python_Cert from '../../public/assets/python_Cert.png';
 import python_Cert1 from '../../public/assets/python_Cert1.png';
@@ -34,6 +38,32 @@ const Certificate_hero = () => {
   }, []);
 
   const certificates = [
+    {
+      image: IBMcert4,
+      link: "https://www.coursera.org/account/accomplishments/verify/7L9R7UF7NO7I?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+      title: "Python for Data Science, AI & Development - IBM",
+      description: "Coading in 
+      Python for Data Science, AI & Development ",
+    },
+    {
+      image: IBMcert3,
+      link: "https://www.coursera.org/account/accomplishments/verify/AL6WH85T05D2?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+      title: "Data Science Methodology - IBM",
+      description: "Methodology For Data Science ",
+    },
+    {
+      image: IBMcert2,
+      link: "https://www.coursera.org/account/accomplishments/verify/P8MB6HDRTA9O?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+      title: "Tools for Data Science - IBM",
+      description: "Tools For Data Science",
+    },
+    {
+      image: IBMcert1,
+      link: "https://www.coursera.org/account/accomplishments/verify/X1JXBT5BM1J1?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+      title: "What Is Data Science - IBM",
+      description: "Data Science Foundations",
+    },
+    
     {
       image: Sql_cert,
       link: "https://www.hackerrank.com/certificates/7767f9ac3b6d",
